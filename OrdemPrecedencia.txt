@@ -1,0 +1,9 @@
+Aritimético:  () ** /...
+Relacionais:   > < >=
+Lógicos ! && ||
+
+
+
+Primeiro !
+Segundo &&
+Terceiro ||

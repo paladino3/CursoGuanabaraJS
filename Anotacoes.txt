@@ -1,0 +1,11 @@
+tranformando para dinheiro em reais R$
+
+Ex  N1 = 1545.5
+n1.toFixed(2).replace('.',',')
+logo N1 = 1545,5
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+logo n1 = R$1,545.50
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+logo n1 = $1,545.50
