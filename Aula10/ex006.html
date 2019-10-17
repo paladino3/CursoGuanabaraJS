@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+<style>
+
+/*chamando por metodo novo!*/
+    div#area{
+        font: normal 25pt Arial;
+        text-align: center;
+        line-height: 200px;
+        height: 200px;
+        width: 250px;
+        font-size: 30px;
+        color: #fff;
+        background: #333;
+        border-radius: 15px;
+    }
+
+</style>
+
+</head>
+<body>
+    <div id="area" onclick="cliclar()" onmouseover="entrar()" onmouseout="sair()"">Interaja</div>
+
+    <script>
+    
+        var a = window.document.getElementById('area')
+        a.addEventListener(`click`, cliclar)
+        a.addEventListener(`onmouseover`,entrar)
+        a.addEventListener(`onmouseout`,sair)
+
+    function cliclar(){
+        a.innerText =  'Clicou!'
+        a.style.background = 'red'
+    }
+    function entrar(){
+        a.innerText = 'Entrou!'
+        
+    }
+    function sair(){
+        a.innerText = "Saiu"
+        a.style.background = `#333`
+    }
+    
+    </script>
+
+</body>
+</html>
