@@ -45,11 +45,13 @@
         
         
 
-        if (mostrar !='brasil'){
+        if (mostrar =='brasil' || mostrar =='BRASIL'){
+            res.innerHTML += `Você mora em: ${mostrar}<br/>`
+            res.innerHTML += `Você é brasileiro`
+           
+        }else{
             res.innerHTML += `Você mora em: ${mostrar}<br/>`
             res.innerHTML += `Você é Estranjeiro!`
-        }else{
-            res.innerHTML += `Você é brasileiro`
         }
     }
 </script>

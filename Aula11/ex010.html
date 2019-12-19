@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DETRAN</title>
+    <title>Detran-PR</title>
 </head>
+<style>
+input#txtvel{
+    width: 50px;
+    border-style: solid;
+    color: green;
+}
+</style>
+
 <body>
     <h1>Sistemas de multas</h1>
-
-Velocidade do carro: <input type="number" name="txtvel" id="txtvel">Km/h
-<input type="button" value="Verificar"  onclick="calular()">
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" > Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
 <div id="res">
 
 </div>
-
 <script>
-    function calular(){
-        var  txtvel = window.document.getElementById('txtvel')
-        var res = window.document.querySelector('div#res')
+    function calcular(){
+        var txtvel =  window.document.getElementById(`txtvel`)
+        var res = window.document.getElementById(`res`)
         var vel = Number(txtvel.value)
-        res.innerHTML = `Sua Velocidade atual:<strong>${vel}</strong> Km/h`
-        
+        res.innerHTML = `<p>Sua Velocidade atual é de <strong>${vel}Km/h</strong></p>`
         if (vel > 60){
-            
-            res.innerHTML +=`<p>Você foi <strong>MULTADO</strong>! Sua velocide ${vel}Km/h </p>`
+            res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade! </p>`
         }
-        res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
-}
-
+        res.innerHTML += `<p>Dirija sempre com o cinto de segunraça</p`
+        }
 </script>
+
 </body>
 </html>
