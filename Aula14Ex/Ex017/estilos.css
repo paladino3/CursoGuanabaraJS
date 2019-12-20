@@ -21,3 +21,11 @@ footer{
     text-align: center;
     font-style: italic;
 }
+
+#res{
+
+    display: flex;
+    display: block;
+    color: blue;
+
+}

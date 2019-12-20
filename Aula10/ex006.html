@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eventos DOM</title>
 <style>
-
 /*chamando por metodo novo!*/
-    div#area{
+    #area{
         font: normal 25pt Arial;
         text-align: center;
         line-height: 200px;
@@ -18,6 +17,8 @@
         color: #fff;
         background: #333;
         border-radius: 15px;
+        position: relative;
+        margin-top: 500;
     }
 
 </style>
@@ -34,8 +35,8 @@
         a.addEventListener(`onmouseout`,sair)
 
     function cliclar(){
-        a.innerText =  'Clicou!'
-        a.style.background = 'red'
+        a.innerText =  'clicked'
+        a.style.background = 'green'
     }
     function entrar(){
         a.innerText = 'Entrou!'

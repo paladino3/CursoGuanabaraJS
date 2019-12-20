@@ -1,0 +1,12 @@
+Array
+var == let
+numero = []
+
+numero.length // tamanho
+numero.sort() // ordenacao
+numero.push('') // insere um elemento na ultima posição
+
+for(var c in numeros){ // for melhorado
+	console.log(numeros[c])
+}
+
